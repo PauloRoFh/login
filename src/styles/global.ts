@@ -1,7 +1,24 @@
-export const defaultTheme = {
-  'backgroud-black-100': '#000000',
+import { createGlobalStyle } from 'styled-components'
 
-  'font-white-100': '#f5f5f7',
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-  'botton-blue-100': '#2074e0',
-}
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+  }
+  
+  body, input, textarea, button {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+`

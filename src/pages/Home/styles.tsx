@@ -72,6 +72,9 @@ export const BottonLogin = styled.button`
   &:hover {
     background: var(--Atlantis-700, #3D6F14);
     cursor: pointer;
+
+    transform: scale(1.1);
+    transition: transform 150ms ease-in-out;
   }
 
   &:active {
@@ -106,4 +109,16 @@ height: 294px;
 
 border-radius: 16px;
 background: var(--Atlantis-200, #CBEDA9);
+
+transition-property: box-shadow, transform;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+
+  box-shadow: 0px 2px 4px 0px rgba(44, 44, 44, 0.24);
+
+  
+  &:hover, &:focus {
+    box-shadow: 0px 8px 10px 1px rgba(34, 33, 33, 0.2);
+  transform: translateY(-8px);
+  }
 `

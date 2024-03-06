@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-display: flex;
-width: 100%;
-height: 100%;
-padding: 20px 56px 804px 56px;
-justify-content: center;
-align-items: center;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 55px 56px 55px;
+`;
 
 export const HeaderBox = styled.header`
 display: flex;
@@ -77,4 +77,33 @@ export const BottonLogin = styled.button`
   &:active {
     background: var(--Atlantis-800, #2A4C0D);
   }
+`
+export const Main = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 22px;
+`
+
+export const BoxMain = styled.div`
+width: 1330px;
+height: 416px;
+
+border-radius: 16px;
+background: var(--Celadon-900, #214629);
+`
+export const BoxSub = styled.div`
+  flex: 1 0 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+export const BoxIntem = styled.div`
+width: 653px;
+height: 294px;
+
+border-radius: 16px;
+background: var(--Atlantis-200, #CBEDA9);
 `

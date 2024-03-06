@@ -1,23 +1,30 @@
-import { BottonHeader, BottonLogin, BottonTitle, Container, HeaderBox, Logo } from './styles' 
+import { BottonHeader, BottonLogin, BottonTitle, BoxIntem, BoxMain, BoxSub, Container, HeaderBox, Logo, Main } from './styles' 
 
 export function Home() {
   return (
     <Container>
       <HeaderBox>
         <Logo>Lontras</Logo>
-        <BottonHeader>
-          <BottonTitle>Sobre</BottonTitle>
-          <BottonTitle>Contato</BottonTitle>
-          <BottonTitle>Produtos</BottonTitle>
-        </BottonHeader>
-        <BottonLogin
-          onClick={() => {
-            window.location.href = "/login";
-          }}
-        >
-          LOGIN
-        </BottonLogin>
+          <BottonHeader>
+            <BottonTitle>Sobre</BottonTitle>
+            <BottonTitle>Contato</BottonTitle>
+            <BottonTitle>Produtos</BottonTitle>
+          </BottonHeader>
+            <BottonLogin
+              onClick={() => {
+                window.location.href = "/login";
+              }}
+            >
+              LOGIN
+            </BottonLogin>
       </HeaderBox>
+      <Main>
+         <BoxMain/>
+         <BoxSub>
+          <BoxIntem></BoxIntem>
+          <BoxIntem></BoxIntem>
+         </BoxSub>
+      </Main>
     </Container>
   )
 }

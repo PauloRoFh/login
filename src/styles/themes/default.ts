@@ -5,4 +5,6 @@ export const defaultTheme = {
   'font-white-100': '#f5f5f7',
 
   'botton-blue-100': '#2074e0',
+
+  '--Atlantis-950': '#15290A',
 }

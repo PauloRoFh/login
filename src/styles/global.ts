@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
     -webkit-font-smoothing: antialiased;
-    background: #000;
+    background: ${props => props.theme['--Atlantis-950']};
   }
   
   body, input, textarea, button {

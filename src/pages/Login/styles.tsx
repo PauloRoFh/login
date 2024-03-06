@@ -1,24 +1,16 @@
 import styled from 'styled-components'
 
-export const Container = styled.h1`
-
-  color : red;
-
-`
-
 export const Body = styled.main`
-display: flex;
-padding: 340px 458px 270px 457px;
-justify-content: center;
-align-items: center;
-
-backdrop-filter: blur(2px);
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  backdrop-filter: blur(2px);
+`;
 
 export const SignInForm = styled.form`
 display: flex;
 width: 525px;
-height: 290px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -114,4 +106,13 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
+&:hover {
+    background: #164e96;
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #498de6;
+  }
 `

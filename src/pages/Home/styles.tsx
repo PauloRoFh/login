@@ -51,6 +51,18 @@ export const BottonTitle = styled.button`
 
   background: none;
   border: none;
+
+  &:hover, &:focus {
+    box-shadow: 0px 8px 10px 1px rgba(34, 33, 33, 0.2);
+    transform: translateY(-1.5px);
+    transition-delay: 15ms;
+
+    color: #daebc9;
+
+    &:active {
+      color: #e4f7d0;
+    }
+  }
 `
 
 export const BottonLogin = styled.button`
@@ -119,6 +131,6 @@ transition-property: box-shadow, transform;
   
   &:hover, &:focus {
     box-shadow: 0px 8px 10px 1px rgba(34, 33, 33, 0.2);
-  transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 `

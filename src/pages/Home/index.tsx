@@ -6,9 +6,9 @@ export function Home() {
       <HeaderBox>
         <Logo>Lontras</Logo>
           <BottonHeader>
-            <BottonTitle>Sobre</BottonTitle>
-            <BottonTitle>Contato</BottonTitle>
-            <BottonTitle>Produtos</BottonTitle>
+            <BottonTitle onClick={() => alert('OK')}>Sobre</BottonTitle>
+            <BottonTitle onClick={() => alert('OK')}>Contato</BottonTitle>
+            <BottonTitle onClick={() => alert('OK')}>Produtos</BottonTitle>
           </BottonHeader>
             <BottonLogin
               onClick={() => {
